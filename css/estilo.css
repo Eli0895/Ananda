@@ -1,11 +1,11 @@
 
 @font-face {
-    font-family:sans-serif ;
+    font-family:Montserrat ;
     src: url("../assets/fonts/Montserrat.zip");
 }
 
 @font-face {
-    font-family:sans-serif;
+    font-family: 'Roboto Slab', serif;
     src: url("../assets/fonts/Roboto.zip");
 }
 
@@ -13,14 +13,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-
-
 
 /*
 TIPOGRAFIA
 familia tipográfica: 'Montserrat', sans-serif;
-familia tipográfica: 0
+font-family: 'Roboto Slab', serif;
 
 
 COLORES
@@ -69,18 +68,17 @@ COLORES
 nav ul li a{
     text-decoration: none;
     color: white;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 .h1{
     color: black;
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab', serif;
     position: absolute;
-    padding-top: 8rem;
-    left: 2rem;
+    top: 10rem;
+    left: 6rem;
 }
 
 .main1{
@@ -142,7 +140,7 @@ nav ul li a{
 }
 
 .footer-principal p{
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1rem;
@@ -185,21 +183,62 @@ nav ul li a{
 }
 
 .contactanos{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     color: black;
+    text-align: center;
+    text-decoration: none;
 }
-.main-formulario{
-    background-color: #BCE29E;
-    width: 35%;
-    position: absolute;
-    top: 10rem;
-    left: 25rem;
-    
-}
+
 .formu{
     font-size: 1rem;
     color: black;
+}
+form{
+    width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color: #829460;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color: #BCE29E;
+	background-color:#000;
+} 
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
 }
 
 /*NOSOTROS*/
@@ -221,7 +260,7 @@ nav ul li a{
 
 .parrafo{
     text-align: center;
-    font-style:'Montserrat';
+    font-style:'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 34px;
@@ -282,6 +321,7 @@ header{
     padding-right: 1rem;
     padding-top: 2rem;
     border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 footer{
@@ -305,7 +345,7 @@ footer{
 .promos p{
     font-size: 1.5rem;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
 }
 .promos h3{
     font-size: 2rem;
