@@ -8,16 +8,32 @@
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body class="contacto">
-    <main>
+    <header class="headercontacto">
+        <div class="icono-lotus2">
+            <img src="../assets/img/lotus.png" alt="flor">
+        </div>
+        <nav>
+            <ul class="navbarcontacto">
+                    <li><a href="../pages/contacto.html">contacto</a></li>
+                    <li><a href="../pages/servicios.html">servicios</a></li>
+                    <li><a href="../pages/promociones.html">promociones</a></li>
+                    <li><a href="../pages/nosotros.html">nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="iconos-contacto">
+            <img  src="../assets/img/lupa.png" alt="buscar">
+            <img  src="../assets/img/email.png" alt="email">
+            <img  src="../assets/img/call.png" alt="llamar">
+        </div>
+    </header>
+    <main class="main-contacto">
         <div class="volver">
-            <a href="../index.html"><button>volver</button</a></div>
+            <a href="../index.html"><button>volver</button></a>
         </div>
         <section class="main-formulario">
-            <div>
-                <br><h1 class="contactanos"> Contacto</h1></br>
-            </div>
-
-        <form action="">
+        <div class="contactanos">
+            <h2>Contacto</h2>
+            <form action="">
             <fieldset class="formu">
                 <legend>Datos personales</legend>
                 <br><label for="nombre">Nombre</label></br>
@@ -29,10 +45,15 @@
                 <br><label for="mensaje">Mensaje</label></br>
                 <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
                 <input type="text" id="mensaje" placeholder="Mensaje"required>
-
                 <br><button>Enviar</button></br>
             </fieldset>
+            </form>
+        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13091.05451966803!2d-54.98620768537963!3d-34.887281380518694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbr!4v1688597979725!5m2!1ses!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         </section>
     </main>
+    <footer class="fotcontacto"></footer>
 </body>
 </html>

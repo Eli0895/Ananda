@@ -21,12 +21,10 @@ TIPOGRAFIA
 familia tipográfica: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif;
 
-
 COLORES
 #D7C0AE ( ROSADO )
 #BCE29E ( VERDE OLIVA CLARO )
 #829460 ( VERDE OLIVA OSCURO ) 
-
 */
 
 
@@ -35,13 +33,18 @@ COLORES
 .header{
     background-image: url("../assets/img/portada.jpg");
     background-size: cover;
-    width: 100%;
-    height: 22.5rem;
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100vh;
+    border-radius: 25px;
+}
+.header header{
+    height: 15rem;
 }
 
 .iconos-superior{
     position: absolute;
-    top:2rem;
+    top:2.5rem;
     right:6rem;
     display: flex;
     justify-content: flex-end;
@@ -61,7 +64,7 @@ COLORES
     justify-content: center;
     gap: 7rem;
     padding-top: 2rem;
-    font-size: 1rem;
+    font-size: 1.25rem;
     list-style: none;
 }
 
@@ -71,100 +74,30 @@ nav ul li a{
     font-family: 'Montserrat', sans-serif;
 }
 
-
-.h1{
+nav ul li a:active{
+    color: #000;
+}
+.titulo{
     color: black;
-    font-size: 2.5rem;
+    font-size: 10rem;
     font-family: 'Roboto Slab', serif;
     position: absolute;
     top: 10rem;
-    left: 6rem;
+    left: 16rem;
 }
 
-.main1{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 45% 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-    "frase1 cards1 cards2 cards3"
-    ;
-    column-gap: 1rem;
+.row img{
+    border-radius: 40px;
+    width: 10rem;
+    height: 10rem;
+    margin-left: 2rem;
 }
-
-.cards1{
-    grid-area: cards1;
-    grid-column: 4/5;
-    justify-self: center;
-    align-self: center;
-}
-
-.cards2{
-    grid-area: cards2;
-    grid-column: 3/4;
-    justify-self: center;
-    align-self: center;
-
-}
-
-.cards3{
-    grid-area: cards3;
-    grid-column: 2/3;
-    justify-self: center;
-    align-self: center;
-}
-
-
-.frase1{
-    grid-area: frase1;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 1.5rem;
-    color: #829460;
-    padding-top: 2rem;
-    padding-left: 5rem;
-
-}
-
-.main1 img{
-    width: 7rem;
-    height: 9rem;
-}
-
-.main1 h3{
-    color: #D7C0AE;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 1.5rem;
-    font-style: italic;
-}
-
-.footer-principal p{
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 30px;
-    color: #829460;
-    position: absolute;
-    padding-top: 1rem;
-    left: 4rem;
-}
-
+/*
 
 .iconos-inferiores{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     gap: 1rem;
-    padding-top: 2rem;
-    padding-right: 2rem;
-}
-
-.footer-principal{
-    background-color: #BCE29E;
-    height: 5rem;
-    width: 100%;
+    justify-content: flex-end;
 }
 
 /*CONTACTO*/
@@ -174,6 +107,41 @@ nav ul li a{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+
+.iconos-contacto{
+    position: absolute;
+    top:0.5rem;
+    right:6rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.icono-lotus2{
+    position: absolute;
+    top: 3rem;
+    left: 1rem;          
+}
+
+.navbarcontacto{
+    background-color: #D7C0AE;
+    display:flex ;
+    justify-content: center;
+    justify-self: center;
+    gap: 7rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.contacto ul li a{
+    text-decoration: none;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .volver{
@@ -182,8 +150,20 @@ nav ul li a{
     padding-left: 2rem;
 }
 
-.contactanos{
-    font-size: 2.5rem;
+.volver a{
+    background-color: #4CAF50;
+}
+
+.main-formulario{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.contactanos h2{
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     color: black;
     text-align: center;
@@ -199,7 +179,7 @@ form{
 	padding:16px;
 	border-radius:10px;
 	margin:auto;
-	background-color: #829460;
+	background-color: #D7C0AE;
 }
 
 form label{
@@ -239,6 +219,64 @@ textarea{
 	margin:8px 0;
 	resize:none;
 	display:block;
+}
+
+.mapa{
+    margin-top: 4rem;
+}
+.contactanos{
+    margin-top: 2rem;
+
+}
+
+.mapa iframe{
+    width: 25rem;
+    height: 20rem;
+}
+
+@media(max-width: 1024px){
+    .navbarcontacto{
+        gap: 3rem;
+    }
+    .iconos-contacto{
+        right: 1rem;
+    }
+
+}
+
+@media(max-width: 768px){
+    .main-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        gap: 2rem;
+        margin-top: 5rem;
+    }
+    .volver{
+        top: 0.3rem;
+        left: 1rem;
+    }
+    .navbarcontacto{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media(max-width: 425px){
+    
+    .icono-lotus2{
+        top: 0.5rem;
+    }
+    .main-formulario{
+        gap: 0.5rem;
+    }
 }
 
 /*NOSOTROS*/
@@ -283,10 +321,26 @@ textarea{
     gap: 2rem;
     font-size: 1rem;
     padding-left: 32rem;
+    background-color: #D7C0AE;
 }
 
 .navbar2 a{
     color: black;
+}
+
+@media(max-width:1024px){
+    .parrafo{
+        left: 3rem;
+        width: 30rem;
+        line-height: 30px;
+    }
+}
+
+@media(max-width:768px){
+.nosotros{
+    background-position: center;
+    background-size: cover;
+}
 }
 
 /*PROMOCIONES*/
@@ -297,20 +351,31 @@ textarea{
     background-size: cover;
 }
 
-.grid{
+.promos{
     display: grid;
     width: 100%;
-    grid-template-rows: 100px 400px 100px;
+    grid-template-rows: 400px;
     grid-template-areas: 
-    "header "
+    ". "
     "promos "
-    "footer"
-    ;
+    "."
+ ;
 }
 
-header{
-    grid-area: header;
+.navbarpromo{
+    display: flex;
+    flex-direction: row;
+    background-color: #D7C0AE;
+    list-style: none;
+    justify-content: center;
+    align-self: center;
+    gap: 4rem;
 }
+
+.navbarpromo li a{
+    text-decoration: none;
+}
+
 .promos{
     grid-area: promos;
     display: grid;
@@ -322,10 +387,6 @@ header{
     padding-top: 2rem;
     border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
-}
-
-footer{
-    grid-area: footer;
 }
 
 .promo1,.promo2,.promo3,.promo4{
@@ -356,7 +417,7 @@ footer{
     
 }
 
-@media(max-width:780px) {
+@media(max-width:768px) {
 
     .promos p{
         font-size: 1rem;
@@ -379,16 +440,25 @@ footer{
         grid-area: promos;
         display: grid;
         width: 80%;
-        grid-template-columns: repeat(4,15%);
-        column-gap: 5rem;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(2,50%);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        justify-items: right;
     }
+    .navbarpromo{
+        gap: 3rem;
+    }
+
 }
 
-@media(max-width:480px) {
+@media(max-width:425px) {
     .promos{
         display: flex;
         flex-direction: column;
-        row-gap: 2rem; }
+        row-gap: 2rem; 
+        align-items: end;
+    }
     .promo1,.promo2,.promo3,.promo4{
         width: 15rem;
         height: 15rem;
@@ -397,6 +467,23 @@ footer{
         position: inherit;
         bottom: 1rem;
     }
+    
+    .navbarpromo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+@media(max-width:320px) {
+    .promos{
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: auto;
+        row-gap: 2rem;
+    }
+
 }
 
 
@@ -434,7 +521,6 @@ footer{
     right: 6rem;
     border:5px solid black;
     border-radius: 30px;
-
 }
 
 .body-servicios h2{
@@ -450,7 +536,6 @@ footer{
     .tratamientos-faciales ul li a{
     text-decoration: none;
     color: black;
-        
     }
 
     .tratamientos-corporales ul li a{
@@ -468,6 +553,15 @@ footer{
     position: absolute;
     top: 1.5rem;
     right: 17rem;
+}
+
+@media(max-width:1024px){
+    .tratamientos-corporales{
+        left: 22rem;
+    }
+    .tratamientos-faciales{
+        right: 3rem;
+    }
 }
 
 @media(max-width:780px) {
@@ -489,6 +583,20 @@ footer{
         left:5rem;
         top: 10rem;
     }
+}
+
+@media(max-width:425px){
+    .body-servicios{
+        background-color: #BCE29E;
+        width: 100%;
+        height: 300px;
+    }
+    .body1{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
 }
 
 /*QUINTA PAGINA SERVICIOS*/
