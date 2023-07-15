@@ -37,12 +37,10 @@ COLORES
     background-image: url("../assets/img/portada.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 25px;
 }
 
 .bodyinicio header{
     min-height: 47vh;
-
 }
 
 .iconos-superior{
@@ -54,7 +52,6 @@ COLORES
     position: absolute;
     top: 2.5rem;
     right: 6rem;
-
 }
 
 .icono-lotus{
@@ -258,8 +255,8 @@ textarea{
 }
 
 .mapa iframe{
-    width: 25rem;
-    height: 20rem;
+    width: 20rem;
+    height: 15rem;
 }
 
 @media(max-width: 1024px){
@@ -305,6 +302,10 @@ textarea{
     .main-formulario{
         gap: 0.5rem;
     }
+}
+
+@media(max-width: 320px){
+
 }
 
 /*NOSOTROS*/
@@ -374,262 +375,105 @@ textarea{
 /*PROMOCIONES*/
 
 .body-promo{
-    background-image: url("../assets/img/fondo\ promo.jpg");
+    background-image: url("../assets/img/portada.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
 }
 
-.promos{
-    display: grid;
-    width: 100%;
-    grid-template-rows: 400px;
-    grid-template-areas: 
-    ". "
-    "promos "
-    "."
- ;
+.body-promo header{
+    min-height: 20vh;
 }
 
-.card img{
-    height: 5rem;
-    width: 5rem;
-
-
-}
 .navbarpromo{
     display: flex;
     flex-direction: row;
-    background-color: #D7C0AE;
+    height: 2.5rem;
     list-style: none;
     justify-content: center;
     align-self: center;
-    gap: 4rem;
+    gap: 6rem;
 }
 
 .navbarpromo li a{
     text-decoration: none;
+    color: #000;
 }
 
-.promos{
-    grid-area: promos;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 4rem;
-    padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 2rem;
-    border-radius: 25px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.promo1,.promo2,.promo3,.promo4{
-    background-color: #BCE29E;
-    font-family:'Montserrat', sans-serif;
-    border-radius: 25px;
-    border: 2px solid black;
-    
-}   
-
-.promos h2{
-    font-size: 2rem;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.promos p{
+.conteiner-fluid{
+    margin-left: 1rem;
+    color: #f6f6f6;
     font-size: 1.5rem;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-.promos h3{
-    font-size: 2rem;
-    text-align: center;
-    position: relative;
-    bottom: -4rem;
-    color: rgb(26, 73, 34);
-    
+    font-style: italic;
+    font-weight: 400;
 }
 
-@media(max-width:768px) {
-
-    .promos p{
-        font-size: 1rem;
-    }
-    .promos h2{
-        font-size: 1.5rem;
-    }
-    .promos h3{
-        font-size: 1.5rem;
-        text-align: center;
-        
-        position: inherit;
-        bottom: 2rem;
-    }
-    .promo1,.promo2,.promo3,.promo4{
-        width: 10rem;
-        height: 15rem;
-    }
-    .promos{
-        grid-area: promos;
-        display: grid;
-        width: 80%;
-        grid-template-columns: repeat(2,50%);
-        grid-template-rows: repeat(2,50%);
-        column-gap: 2rem;
-        row-gap: 2rem;
-        justify-items: right;
-    }
-    .navbarpromo{
-        gap: 3rem;
-    }
-
-}
-
-@media(max-width:425px) {
-    .promos{
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem; 
-        align-items: end;
-    }
-    .promo1,.promo2,.promo3,.promo4{
-        width: 15rem;
-        height: 15rem;
-    }
-    .promos h3{
-        position: inherit;
-        bottom: 1rem;
-    }
-    
+@media(max-width:780px){
     .navbarpromo{
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 1rem;
-    }
-}
-
-@media(max-width:320px) {
-    .promos{
-        display: grid;
-        grid-template-rows: repeat(4,1fr);
-        grid-template-columns: auto;
-        row-gap: 2rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        min-height: 40vh;
     }
 
 }
-
 
 /*SERVICIOS*/
 
 .body1{
-    background-image: url("../assets/img/fondo\ servicos.jpg");
+    background-image: url("../assets/img/fondo\ nosotros.jpg");
     background-size: cover;
     background-position: center;
-}
-
-.body-servicios{
-    background-color: #BCE29E;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 20rem;
-    position: absolute;
-    top: 10rem;
+    height: 100vh;
 }
 
-.img-corporal{
-    width: 14rem;
-    height: 13rem;
-    position: absolute;
-    top: -5rem;
-    left: 6rem;
-    border: 5px solid white;
-    border-radius: 40px;
+.main-servicios{
+    display: flex;
+    flex-direction: row; 
+    gap: 15rem; 
+    justify-content: center;
+    margin-top: 3rem;
+    margin-left: -7rem;
+    text-align: center;
 }
 
-.img-facial{
-    width: 14rem;
-    height: 13rem;
-    position: absolute;
-    top: 15rem;
-    right: 6rem;
-    border:5px solid black;
-    border-radius: 30px;
+.main-servicios img{
+    width: 25rem;
+    height: 25rem;
+    border-radius: 300px;
+}
+.main-servicios ul li{
+    font-size: 1rem;
+    list-style: none;
+    color: darkolivegreen;
 }
 
-.body-servicios h2{
+.main-servicios h5{
     font-size: 1.5rem;
-    font-family:'Roboto', sans-serif; 
+    font-family: sans-serif;
 }
 
-.body-servicios ul li{
-    font-size:1.5rem;
-    font-family:'Roboto', sans-serif;
+
+
+.card-facial{
+    ma
 }
-
-    .tratamientos-faciales ul li a{
-    text-decoration: none;
-    color: black;
-    }
-
-    .tratamientos-corporales ul li a{
-    text-decoration: none;
-    color: black;
-    }
-
-.tratamientos-corporales{
-    position: absolute;
-    top: 1.5rem;
-    left: 26rem;
-}
-
-.tratamientos-faciales{
-    position: absolute;
-    top: 1.5rem;
-    right: 17rem;
-}
-
 @media(max-width:1024px){
-    .tratamientos-corporales{
-        left: 22rem;
-    }
-    .tratamientos-faciales{
-        right: 3rem;
-    }
+ 
 }
 
 @media(max-width:780px) {
-    .body{
-        display: flex;
-        flex-direction: column;
-    }
-    .body-servicios h2{
-        font-size: 1rem;
-        font-family:'Roboto', sans-serif; ;
-    }
-    .body-servicios ul li{
-        font-size:1rem;
-        font-family:'Roboto', sans-serif;
-    }
-
-    .tratamientos-faciales{
-        position: absolute;
-        left:5rem;
-        top: 10rem;
-    }
+ 
 }
 
 @media(max-width:425px){
-    .body-servicios{
-        background-color: #BCE29E;
-        width: 100%;
-        height: 300px;
-    }
-    .body1{
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+ 
 
 }
 
