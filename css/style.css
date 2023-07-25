@@ -116,164 +116,6 @@ font-family: 'Roboto Slab', serif;*/
   margin-bottom: 1rem;
 }
 
-/*PAGINA NOSOTROS*/
-.nosotros {
-  background-image: url("../assets/img/fondo nosotros.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-}
-.nosotros header {
-  min-height: 2rem;
-}
-.nosotros header div {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-left: 1.5rem;
-}
-
-.main-nosotros {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  margin-top: 7rem;
-  margin-left: 3rem;
-  min-height: 400px;
-}
-.main-nosotros p {
-  font-style: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 34px;
-  width: 40rem;
-}
-
-.footer-nosotros {
-  background-color: #D7C0AE;
-  width: 100%;
-  text-align: center;
-}
-.footer-nosotros nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 2rem;
-  gap: 5rem;
-  padding-left: 2rem;
-  background-color: #D7C0AE;
-  list-style: none;
-}
-.footer-nosotros a {
-  color: #000;
-  font-family: serif;
-  font-size: 1.5rem;
-}
-
-/*PAGINA PROMOCIONES*/
-.body-promo {
-  background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: 100%;
-  height: 100vh;
-}
-.body-promo .header-promo {
-  display: flex;
-  justify-content: center;
-  min-height: 10vh;
-  background-color: rgba(0, 0, 0, 0.4039215686);
-}
-.body-promo .header-promo nav {
-  align-self: center;
-}
-.body-promo .header-promo nav .navpromo {
-  display: flex;
-  flex-direction: row;
-  height: 2.5rem;
-  list-style: none;
-  justify-content: center;
-  align-self: center;
-  gap: 6rem;
-}
-.body-promo .header-promo nav .navpromo a {
-  text-decoration: none;
-  color: #000;
-  font-size: 1.2rem;
-}
-
-.conteiner-fluid {
-  margin-top: 5rem;
-  margin-left: 1rem;
-  color: black;
-  font-size: 1rem;
-  font-style: italic;
-  font-weight: 400;
-}
-.conteiner-fluid img {
-  height: 14rem;
-  width: 13rem;
-  border-radius: 10px;
-}
-
-/*PAGINA SERVICIOS*/
-.body1 {
-  background-color: #D7C0AE;
-}
-.body1 .header-servicios {
-  display: flex;
-  justify-content: space-between;
-}
-.body1 .header-servicios nav {
-  align-self: center;
-}
-.body1 .header-servicios nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  gap: 4rem;
-}
-.body1 .header-servicios nav ul a {
-  text-decoration: none;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-}
-.body1 .header-servicios nav ul a:active {
-  color: #000;
-}
-.body1 .header-servicios .iconos-superior1 {
-  display: flex;
-  justify-content: end;
-  align-items: start;
-  gap: 1.5rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-}
-.body1 .header-servicios .iconos-superior1 img {
-  width: 1rem;
-  height: 1rem;
-}
-.body1 .header-servicios div {
-  display: flex;
-}
-.body1 .header-servicios div img {
-  justify-content: right;
-  margin-left: 2rem;
-  height: 5rem;
-  width: 5rem;
-}
-
-.main-servicios {
-  display: flex;
-  justify-content: space-around;
-  align-self: center;
-  text-align: center;
-}
-
-.fot-servicios {
-  min-height: 5rem;
-}
-
 /*PAGINA CONTACTO*/
 .contacto {
   background-image: url("../assets/img/fondo contacto.jpg");
@@ -375,6 +217,158 @@ font-family: 'Roboto Slab', serif;*/
   height: 15rem;
 }
 
+/*PAGINA SERVICIOS*/
+.body1 {
+  background-color: #D7C0AE;
+}
+.body1 .header-servicios {
+  display: flex;
+  justify-content: space-between;
+}
+.body1 .header-servicios nav {
+  align-self: center;
+}
+.body1 .header-servicios nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+}
+.body1 .header-servicios nav ul a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.body1 .header-servicios nav ul a:active {
+  color: #000;
+}
+.body1 .header-servicios .iconos-superior1 {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 1.5rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+.body1 .header-servicios .iconos-superior1 img {
+  width: 1rem;
+  height: 1rem;
+}
+.body1 .header-servicios div {
+  display: flex;
+}
+.body1 .header-servicios div img {
+  justify-content: right;
+  margin-left: 2rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.main-servicios {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  text-align: center;
+}
+
+.fot-servicios {
+  min-height: 5rem;
+}
+
+/*PAGINA PROMOCIONES*/
+.body-promo {
+  background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 100vh;
+}
+.body-promo .header-promo {
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+  background-color: rgba(0, 0, 0, 0.4039215686);
+}
+.body-promo .header-promo nav {
+  align-self: center;
+}
+.body-promo .header-promo nav .navpromo {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+  list-style: none;
+  justify-content: center;
+  align-self: center;
+  gap: 6rem;
+}
+.body-promo .header-promo nav .navpromo a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.conteiner-fluid {
+  margin-top: 5rem;
+  margin-left: 1rem;
+  color: black;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.conteiner-fluid img {
+  height: 14rem;
+  width: 13rem;
+  border-radius: 10px;
+}
+
+/*PAGINA NOSOTROS*/
+.nosotros {
+  background-color: rgba(215, 192, 174, 0.3647058824);
+  width: 100%;
+}
+.nosotros header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2862745098);
+}
+.nosotros header div {
+  justify-content: start;
+  padding-left: 2rem;
+}
+.nosotros header ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.25rem;
+  list-style: none;
+  text-align: center;
+}
+.nosotros header ul a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.nosotros header ul a:active {
+  color: black;
+}
+
+.main-nosotros {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: 7rem;
+  margin-left: 3rem;
+  min-height: 400px;
+}
+.main-nosotros p {
+  font-style: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 34px;
+  width: 40rem;
+}
+
 /*INDEX.HTML*/
 @media (max-width: 780px) {
   .headerinicio ul {
@@ -416,6 +410,8 @@ font-family: 'Roboto Slab', serif;*/
   .main-contacto {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-self: center;
   }
   .main-contacto form {
     display: flex;
@@ -456,30 +452,8 @@ font-family: 'Roboto Slab', serif;*/
     width: 30rem;
     line-height: 30px;
   }
-  .nosotros {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-  }
 }
 @media (max-width: 768px) {
-  .nosotros {
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat-y;
-  }
-  .footer-nosotros nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    height: 10rem;
-  }
-  .footer-nosotros {
-    background-color: #D7C0AE;
-    width: 100%;
-  }
   .main-nosotros p {
     width: 20rem;
   }
@@ -534,6 +508,5 @@ font-family: 'Roboto Slab', serif;*/
     align-self: center;
   }
 }
-/*FIN*/
 
 /*# sourceMappingURL=style.css.map */

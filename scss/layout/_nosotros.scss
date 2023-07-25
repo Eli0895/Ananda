@@ -1,0 +1,49 @@
+/*PAGINA NOSOTROS*/
+
+.nosotros{
+    background-color: #d7c0ae5d;
+    width: 100%;
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #00000049;
+        div{
+            justify-content: start;
+            padding-left: 2rem;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            font-size: 1.25rem;
+            list-style: none;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                &:active{
+                    color: black;
+                }
+                }
+            }               
+        }  
+    }
+
+.main-nosotros{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 7rem;
+    margin-left: 3rem;
+    min-height: 400px;
+        p{
+            font-style:'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 34px;
+            width: 40rem;
+        }
+}
