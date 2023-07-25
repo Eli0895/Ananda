@@ -1,0 +1,539 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../assets/fonts/Montserrat.zip");
+}
+@font-face {
+  font-family: "Roboto Slab", serif;
+  src: url("../assets/fonts/Roboto.zip");
+}
+@font-face {
+  font-family: "Indie Flower";
+  src: url("../assets/fonts/Indie_Flower.zip");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+TIPOGRAFIA
+familia tipográfica: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif;*/
+/*PAGINA INDEX.HTML*/
+.bodyinicio {
+  background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 100vh;
+}
+
+.headerinicio {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2862745098);
+}
+.headerinicio ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.25rem;
+  list-style: none;
+  text-align: center;
+}
+.headerinicio li:hover {
+  transform: scale(1.1);
+}
+.headerinicio a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.headerinicio a:active {
+  color: black;
+}
+.headerinicio .icono-lotus {
+  justify-content: left;
+  margin-left: 2rem;
+}
+
+.iconos-superior {
+  display: flex;
+  justify-items: end;
+  gap: 1.5rem;
+  padding-right: 2rem;
+}
+.iconos-superior img {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+.iconos-superior img:hover {
+  transform: scale(1.2);
+}
+
+.container-fluid-1 {
+  min-height: 46vh;
+}
+.container-fluid-1 h1 {
+  color: black;
+  font-size: 3rem;
+  font-family: "Indie Flower";
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.container-fluid-1 .row {
+  display: flex;
+  justify-content: center;
+}
+.container-fluid-1 .row img {
+  border-radius: 40px;
+  width: 18rem;
+  height: 18rem;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  transition: height width 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container-fluid-1 .row img:hover {
+  height: 20rem;
+  width: 20rem;
+}
+
+.iconos-inferiores {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*PAGINA NOSOTROS*/
+.nosotros {
+  background-image: url("../assets/img/fondo nosotros.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.nosotros header {
+  min-height: 2rem;
+}
+.nosotros header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+}
+
+.main-nosotros {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: 7rem;
+  margin-left: 3rem;
+  min-height: 400px;
+}
+.main-nosotros p {
+  font-style: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 34px;
+  width: 40rem;
+}
+
+.footer-nosotros {
+  background-color: #D7C0AE;
+  width: 100%;
+  text-align: center;
+}
+.footer-nosotros nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  gap: 5rem;
+  padding-left: 2rem;
+  background-color: #D7C0AE;
+  list-style: none;
+}
+.footer-nosotros a {
+  color: #000;
+  font-family: serif;
+  font-size: 1.5rem;
+}
+
+/*PAGINA PROMOCIONES*/
+.body-promo {
+  background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 100vh;
+}
+.body-promo .header-promo {
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+  background-color: rgba(0, 0, 0, 0.4039215686);
+}
+.body-promo .header-promo nav {
+  align-self: center;
+}
+.body-promo .header-promo nav .navpromo {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+  list-style: none;
+  justify-content: center;
+  align-self: center;
+  gap: 6rem;
+}
+.body-promo .header-promo nav .navpromo a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.conteiner-fluid {
+  margin-top: 5rem;
+  margin-left: 1rem;
+  color: black;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+}
+.conteiner-fluid img {
+  height: 14rem;
+  width: 13rem;
+  border-radius: 10px;
+}
+
+/*PAGINA SERVICIOS*/
+.body1 {
+  background-color: #D7C0AE;
+}
+.body1 .header-servicios {
+  display: flex;
+  justify-content: space-between;
+}
+.body1 .header-servicios nav {
+  align-self: center;
+}
+.body1 .header-servicios nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+}
+.body1 .header-servicios nav ul a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.body1 .header-servicios nav ul a:active {
+  color: #000;
+}
+.body1 .header-servicios .iconos-superior1 {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 1.5rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+.body1 .header-servicios .iconos-superior1 img {
+  width: 1rem;
+  height: 1rem;
+}
+.body1 .header-servicios div {
+  display: flex;
+}
+.body1 .header-servicios div img {
+  justify-content: right;
+  margin-left: 2rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.main-servicios {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  text-align: center;
+}
+
+.fot-servicios {
+  min-height: 5rem;
+}
+
+/*PAGINA CONTACTO*/
+.contacto {
+  background-image: url("../assets/img/fondo contacto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headercontacto ul {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  gap: 7rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  list-style: none;
+}
+.headercontacto ul a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.headercontacto div {
+  position: absolute;
+  top: 0.5rem;
+  right: 6rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.main-contacto section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  justify-self: center;
+  align-self: center;
+}
+.main-contacto section h2 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+.main-contacto section fieldset {
+  font-size: 1rem;
+  color: black;
+}
+.main-contacto section form {
+  width: 300px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #D7C0AE;
+}
+.main-contacto section form label {
+  width: 72px;
+  font-weight: bold;
+  display: inline-block;
+}
+.main-contacto section form form input[type=text],
+.main-contacto section form form input[type=email] {
+  width: 180px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+.main-contacto section form input[type=submit] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: #BCE29E;
+  background-color: #000;
+}
+.main-contacto section form textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  resize: none;
+  display: block;
+}
+.main-contacto .mapa {
+  margin-top: 8rem;
+}
+.main-contacto .mapa iframe {
+  width: 20rem;
+  height: 15rem;
+}
+
+/*INDEX.HTML*/
+@media (max-width: 780px) {
+  .headerinicio ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .iconos-inferiores {
+    padding-bottom: 3rem;
+  }
+  .container-fluid-1 h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .iconos-superiores {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0.5rem;
+  }
+  .iconos-superior {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+  }
+}
+/*CONTACTO*/
+@media (max-width: 1024px) {
+  .contacto nav {
+    gap: 2rem;
+  }
+  .contacto div {
+    right: 1rem;
+  }
+}
+@media (max-width: 780px) {
+  .main-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contacto form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  .contacto nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .main-contacto form {
+    gap: 0.5rem;
+  }
+  .contacto div {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .formu {
+    width: 260px;
+  }
+  .contacto div {
+    gap: 0.5rem;
+  }
+}
+/*NOSOTROS*/
+@media (max-width: 1024px) {
+  .main-nosotros p {
+    left: 3rem;
+    width: 30rem;
+    line-height: 30px;
+  }
+  .nosotros {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  .nosotros {
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+  .footer-nosotros nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    height: 10rem;
+  }
+  .footer-nosotros {
+    background-color: #D7C0AE;
+    width: 100%;
+  }
+  .main-nosotros p {
+    width: 20rem;
+  }
+  .main-nosotros {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 3.5rem;
+  }
+}
+/*PROMOCIONES*/
+@media (max-width: 780px) {
+  .navpromo {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+  }
+}
+/*SERVICIOS*/
+@media (max-width: 780px) {
+  .main-servicios {
+    margin-left: 5rem;
+  }
+  .header-servicios ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 696px) {
+  .body1 nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .main-servicios {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    justify-content: center;
+    text-align: center;
+  }
+  .iconos-superior1 {
+    flex-direction: column;
+    margin-bottom: 14rem;
+  }
+  .iconos-superior1 img {
+    justify-content: center;
+    align-self: center;
+  }
+}
+/*FIN*/
+
+/*# sourceMappingURL=style.css.map */
