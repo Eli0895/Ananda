@@ -27,12 +27,24 @@
         gap: 2rem;
         margin-top: 5rem;
     }
-    .contacto nav{
+    .main-contacto section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        margin-bottom: 8rem;
+    }
+    .contacto ul{
         display: flex;
         flex-direction: column;
         gap: 1rem;
         justify-content: center;
         text-align: center;
+        margin-top: 2rem;
+    
+    .iconos-contacto{
+        display: flex;
+        flex-direction: column;
+    }
     }
     .headerinicio{
         ul{
@@ -43,6 +55,7 @@
         }
     }
     .iconos-inferiores{
+        justify-content: center;
         padding-bottom: 3rem;
     }
     .container-fluid-1 h1{
@@ -97,6 +110,7 @@
             align-self: center;
         }
     }
+    
 }
 @media(max-width: 425px){  
     .main-contacto form{
@@ -124,6 +138,12 @@
     }
     .contacto div{
         gap: 0.5rem;
+    }
+    .main-contacto{
+        justify-items: center;
+    }
+    .headercontacto{
+        gap: 2rem;
     }
 }
 

@@ -6,11 +6,16 @@
     background-size: cover;
 }
 .headercontacto{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 7rem;
+    margin-top: 1rem;
     ul{
         display:flex ;
         justify-content: center;
         justify-self: center;
-        gap: 7rem;
+        gap: 5rem;
         padding-top: 0.5rem;
         font-size: 1rem;
         list-style: none;
@@ -20,15 +25,13 @@
                 font-family: 'Montserrat', sans-serif;    
             }
         }    
-div{
-    position: absolute;
-    top:0.5rem;
-    right:6rem;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
-    width: 1rem;
-    height: 1rem;
+    .iconos-contacto{
+        display: flex;
+        justify-items: end;
+        align-self: center;
+        gap: 1.5rem;
+        width: 1rem;
+        height: 1rem;
     }
 }          
 .main-contacto{
