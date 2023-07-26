@@ -1,41 +1,15 @@
-/*INDEX.HTML*/
-@media(max-width: 780px){
-    .headerinicio{
-        ul{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            gap: 1rem;          
-        }
-    }
-    .iconos-inferiores{
-        padding-bottom: 3rem;
-    }
-    .container-fluid-1 h1{
-        text-align: center;
-    }
-}
-@media(max-width: 425px){
-    .iconos-superiores{
-        display: flex;
-        flex-direction: column;
-        padding-right: 0.5rem;
-    }
-    .iconos-superior{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        text-align: center;
-    }
-}
 
-/*CONTACTO*/
 @media(max-width: 1024px){
     .contacto nav{
         gap: 2rem;
     }
     .contacto div{
         right: 1rem;
+    }
+    .main-nosotros p{
+        left: 3rem;
+        width: 30rem;
+        line-height: 30px;
     }
 }
 @media(max-width: 780px){
@@ -60,34 +34,20 @@
         justify-content: center;
         text-align: center;
     }
-}
-@media(max-width: 425px){  
-    .main-contacto form{
-        gap: 0.5rem;
+    .headerinicio{
+        ul{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;          
+        }
     }
-    .contacto div{
-        gap: 0.5rem;
+    .iconos-inferiores{
+        padding-bottom: 3rem;
     }
-}
-@media(max-width: 320px){
-    .formu{
-        width: 260px;
-        
+    .container-fluid-1 h1{
+        text-align: center;
     }
-    .contacto div{
-        gap: 0.5rem;
-    }
-}
-
-/*NOSOTROS*/
-@media(max-width:1024px){
-    .main-nosotros p{
-        left: 3rem;
-        width: 30rem;
-        line-height: 30px;
-    }
-}
-@media(max-width:768px){
     .main-nosotros p{
         width: 20rem;
     }
@@ -97,20 +57,11 @@
         margin-top: 2rem;
         padding-bottom: 3.5rem;
     }
-}
-
-/*PROMOCIONES*/
-@media(max-width:780px){
     .navpromo{
         display: flex;
         flex-direction: column;
         height: 10rem;
     }
-}
-
-/*SERVICIOS*/
-
-@media(max-width:780px){
     .main-servicios{
         margin-left: 5rem;
     }
@@ -122,6 +73,7 @@
         margin-top: 2rem;
     }
 }
+
 
 @media(max-width:696px){
     .body1 nav{
@@ -136,7 +88,6 @@
         margin-top: 6rem;
         justify-content: center;
         text-align: center;
-        
     }
     .iconos-superior1{
         flex-direction: column;
@@ -145,9 +96,37 @@
             justify-content: center;
             align-self: center;
         }
-        
     }
 }
+@media(max-width: 425px){  
+    .main-contacto form{
+        gap: 0.5rem;
+    }
+    .contacto div{
+        gap: 0.5rem;
+    }
+    .iconos-superiores{
+        display: flex;
+        flex-direction: column;
+        padding-right: 0.5rem;
+    }
+    .iconos-superior{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        text-align: center;
+    }
+}
+
+@media(max-width: 320px){
+    .formu{
+        width: 260px;
+    }
+    .contacto div{
+        gap: 0.5rem;
+    }
+}
+
 
 
 
