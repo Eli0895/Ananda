@@ -4,6 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 .headercontacto{
     display: flex;
@@ -11,6 +12,7 @@
     align-self: center;
     margin-top: 1rem;
     ul{
+        display: flex;
         justify-content: center;
         gap: 5rem;
         padding-top: 0.5rem;
@@ -21,8 +23,7 @@
             color:black;
             font-family: 'Montserrat', sans-serif;    
         }
-    }    
-}
+    }   
     .iconos-contacto{
         display: flex;
         justify-items: end;
@@ -30,8 +31,10 @@
         gap: 1.5rem;
         width: 1rem;
         height: 1rem;
-    }         
+    } 
+}      
 .main-contacto{
+    margin-top: 3rem;
     section{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -93,7 +96,9 @@
                                         }
                                     }
 .mapa{
-        margin-top: 8rem;
+        justify-self: center;
+        align-self: center;
+        margin-top: 3rem;
             iframe{
                 width: 20rem;
                 height: 15rem;

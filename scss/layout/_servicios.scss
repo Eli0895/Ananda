@@ -2,18 +2,17 @@
 
 .body1{
     background-color: #D7C0AE;
-        .header-servicios{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            nav{
+    .header-servicios{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1rem;
+            ul{
+                display: flex;
+                justify-content: center;
                 align-items: center;
-                ul{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    list-style: none;
-                    gap: 3rem;
+                list-style: none;
+                gap: 3rem;
                     a{
                         text-decoration: none;
                         color: white;
@@ -34,8 +33,8 @@
             width: 1rem;
             height: 1rem;
             }
-            } 
-    div{
+        } 
+    .lotus-servicio{
         display: flex;
         img{
             justify-content: right;
@@ -44,7 +43,7 @@
                 }
             }
         }
-    }
+
 .main-servicios{
     display: flex;
     justify-content: space-around;
@@ -52,6 +51,9 @@
     text-align: center;
     gap: 1rem;
     margin-top:3rem ;
+    .card{
+        margin: 1rem;
+    }
 }
 .fot-servicios{
     min-height: 5rem;
