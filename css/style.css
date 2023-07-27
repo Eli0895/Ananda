@@ -17,12 +17,16 @@
   font-family: "Indie Flower";
   src: url("../assets/fonts/Indie_Flower.zip");
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /*
 TIPOGRAFIA
 familia tipográfica: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif;*/
-
 /*PAGINA INDEX.HTML*/
 .bodyinicio {
   background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -122,27 +126,24 @@ font-family: 'Roboto Slab', serif;*/
 
 .headercontacto {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-self: center;
   margin-top: 1rem;
 }
-.headercontacto nav {
-  display: flex;
-}
-.headercontacto nav ul {
+.headercontacto ul {
   justify-content: center;
   gap: 5rem;
   padding-top: 0.5rem;
   font-size: 1rem;
   list-style: none;
 }
-.headercontacto nav ul a {
+.headercontacto ul a {
   text-decoration: none;
   color: black;
   font-family: "Montserrat", sans-serif;
 }
-.headercontacto .iconos-contacto {
+
+.iconos-contacto {
   display: flex;
   justify-items: end;
   align-self: center;
@@ -449,84 +450,73 @@ font-family: 'Roboto Slab', serif;*/
     width: 1rem;
     height: 1rem;
   }
+  .main-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+  .main-contacto form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+  .main-contacto section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    margin-bottom: 8rem;
+  }
+  .headerinicio ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .iconos-inferiores {
+    justify-content: center;
+    padding-bottom: 3rem;
+  }
+  .container-fluid-1 h1 {
+    text-align: center;
+  }
+  .main-nosotros p {
+    width: 20rem;
+  }
+  .main-nosotros {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 3.5rem;
+  }
+  .header-promo .navpromo {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-servicios {
+    margin-left: 5rem;
+  }
+  .header-servicios {
+    margin-top: 1rem;
+  }
+  .header-servicios nav {
+    display: flex;
+    gap: 1rem;
+  }
+  .header-servicios nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  .header-servicios .iconos-superior1 {
+    padding-right: 0px;
+  }
 }
-.main-contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-}
-
-.main-contacto form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  gap: 2rem;
-  margin-top: 5rem;
-}
-
-.main-contacto section {
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  justify-items: center;
-  margin-bottom: 8rem;
-}
-
-.headerinicio ul {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1rem;
-}
-
-.iconos-inferiores {
-  justify-content: center;
-  padding-bottom: 3rem;
-}
-
-.container-fluid-1 h1 {
-  text-align: center;
-}
-
-.main-nosotros p {
-  width: 20rem;
-}
-
-.main-nosotros {
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  padding-bottom: 3.5rem;
-}
-
-.header-promo .navpromo {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-servicios {
-  margin-left: 5rem;
-}
-
-.header-servicios {
-  margin-top: 1rem;
-}
-.header-servicios nav {
-  display: flex;
-  gap: 1rem;
-}
-.header-servicios nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-}
-.header-servicios .iconos-superior1 {
-  padding-right: 0px;
-}
-
 @media (max-width: 696px) {
   .body1 nav {
     display: flex;
