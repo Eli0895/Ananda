@@ -17,16 +17,12 @@
   font-family: "Indie Flower";
   src: url("../assets/fonts/Indie_Flower.zip");
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /*
 TIPOGRAFIA
 familia tipográfica: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif;*/
+
 /*PAGINA INDEX.HTML*/
 .bodyinicio {
   background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -126,21 +122,22 @@ font-family: 'Roboto Slab', serif;*/
 
 .headercontacto {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-self: center;
-  gap: 7rem;
   margin-top: 1rem;
 }
-.headercontacto ul {
+.headercontacto nav {
   display: flex;
+}
+.headercontacto nav ul {
   justify-content: center;
-  justify-self: center;
   gap: 5rem;
   padding-top: 0.5rem;
   font-size: 1rem;
   list-style: none;
 }
-.headercontacto ul a {
+.headercontacto nav ul a {
   text-decoration: none;
   color: black;
   font-family: "Montserrat", sans-serif;
@@ -228,17 +225,18 @@ font-family: 'Roboto Slab', serif;*/
 }
 .body1 .header-servicios {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 .body1 .header-servicios nav {
-  align-self: center;
+  align-items: center;
 }
 .body1 .header-servicios nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 4rem;
+  gap: 3rem;
 }
 .body1 .header-servicios nav ul a {
   text-decoration: none;
@@ -251,10 +249,8 @@ font-family: 'Roboto Slab', serif;*/
 .body1 .header-servicios .iconos-superior1 {
   display: flex;
   justify-content: end;
-  align-items: start;
-  gap: 1.5rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
+  align-items: center;
+  gap: 1rem;
 }
 .body1 .header-servicios .iconos-superior1 img {
   width: 1rem;
@@ -265,9 +261,8 @@ font-family: 'Roboto Slab', serif;*/
 }
 .body1 .header-servicios div img {
   justify-content: right;
-  margin-left: 2rem;
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 .main-servicios {
@@ -275,6 +270,8 @@ font-family: 'Roboto Slab', serif;*/
   justify-content: space-around;
   align-self: center;
   text-align: center;
+  gap: 1rem;
+  margin-top: 3rem;
 }
 
 .fot-servicios {
@@ -299,7 +296,6 @@ font-family: 'Roboto Slab', serif;*/
 .body-promo .header-promo nav .navpromo {
   display: flex;
   flex-direction: row;
-  height: 2.5rem;
   list-style: none;
   justify-content: center;
   align-self: center;
@@ -355,7 +351,6 @@ font-family: 'Roboto Slab', serif;*/
   color: black;
 }
 .nosotros div {
-  display: flex;
   justify-content: left;
   padding-left: 2rem;
 }
@@ -381,16 +376,8 @@ font-family: 'Roboto Slab', serif;*/
 }
 
 .container-fluid-2 {
-  min-height: 46vh;
-}
-.container-fluid-2 h1 {
-  color: black;
-  font-size: 3rem;
-  font-family: "Indie Flower";
   display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  min-height: 46vh;
 }
 .container-fluid-2 .row {
   display: flex;
@@ -429,12 +416,6 @@ font-family: 'Roboto Slab', serif;*/
 }
 
 @media (max-width: 1024px) {
-  .contacto nav {
-    gap: 2rem;
-  }
-  .contacto div {
-    right: 1rem;
-  }
   .main-nosotros p {
     left: 3rem;
     width: 30rem;
@@ -442,76 +423,110 @@ font-family: 'Roboto Slab', serif;*/
   }
 }
 @media (max-width: 780px) {
-  .main-contacto {
+  .headercontacto {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+  }
+  .headercontacto ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-self: flex-start;
+    text-align: center;
+    margin-top: 1rem;
+    padding-left: 0px;
+  }
+  .headercontacto .iconos-contacto {
+    display: flex;
     justify-content: center;
     align-self: center;
-  }
-  .main-contacto form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    gap: 2rem;
-    margin-top: 5rem;
-  }
-  .main-contacto section {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    justify-items: center;
-    margin-bottom: 8rem;
-  }
-  .contacto ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    text-align: center;
-    margin-top: 2rem;
-  }
-  .contacto ul .iconos-contacto {
-    display: flex;
-    flex-direction: column;
-  }
-  .headerinicio ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    margin-top: 0.5rem;
     gap: 1rem;
   }
-  .iconos-inferiores {
-    justify-content: center;
-    padding-bottom: 3rem;
-  }
-  .container-fluid-1 h1 {
-    text-align: center;
-  }
-  .main-nosotros p {
-    width: 20rem;
-  }
-  .main-nosotros {
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    padding-bottom: 3.5rem;
-  }
-  .navpromo {
-    display: flex;
-    flex-direction: column;
-    height: 10rem;
-  }
-  .main-servicios {
-    margin-left: 5rem;
-  }
-  .header-servicios ul {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    margin-top: 2rem;
+  .headercontacto .iconos-contacto img {
+    width: 1rem;
+    height: 1rem;
   }
 }
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+.main-contacto form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.main-contacto section {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  margin-bottom: 8rem;
+}
+
+.headerinicio ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.iconos-inferiores {
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.container-fluid-1 h1 {
+  text-align: center;
+}
+
+.main-nosotros p {
+  width: 20rem;
+}
+
+.main-nosotros {
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding-bottom: 3.5rem;
+}
+
+.header-promo .navpromo {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-servicios {
+  margin-left: 5rem;
+}
+
+.header-servicios {
+  margin-top: 1rem;
+}
+.header-servicios nav {
+  display: flex;
+  gap: 1rem;
+}
+.header-servicios nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.header-servicios .iconos-superior1 {
+  padding-right: 0px;
+}
+
 @media (max-width: 696px) {
   .body1 nav {
     display: flex;
@@ -519,27 +534,22 @@ font-family: 'Roboto Slab', serif;*/
     text-align: center;
     gap: 1rem;
   }
-  .main-servicios {
-    display: flex;
-    flex-direction: column;
-    margin-top: 6rem;
-    justify-content: center;
-    text-align: center;
-  }
-  .iconos-superior1 {
-    flex-direction: column;
-    margin-bottom: 14rem;
-  }
-  .iconos-superior1 img {
-    justify-content: center;
-    align-self: center;
-  }
 }
 @media (max-width: 425px) {
-  .main-contacto form {
-    gap: 0.5rem;
+  .headerinicio {
+    justify-content: center;
+    gap: 2rem;
   }
-  .contacto div {
+  .headerinicio ul {
+    padding-left: 0px;
+  }
+  .headerinicio .icono-lotus {
+    margin-left: 0px;
+  }
+  .headerinicio .iconos-superior {
+    padding-right: 0px;
+  }
+  .main-contacto form {
     gap: 0.5rem;
   }
   .iconos-superiores {
@@ -553,19 +563,20 @@ font-family: 'Roboto Slab', serif;*/
     justify-content: end;
     text-align: center;
   }
+  .header-servicios .iconos-superior1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 2rem;
+  }
 }
 @media (max-width: 320px) {
   .formu {
     width: 260px;
   }
-  .contacto div {
-    gap: 0.5rem;
-  }
   .main-contacto {
     justify-items: center;
-  }
-  .headercontacto {
-    gap: 2rem;
   }
 }
 

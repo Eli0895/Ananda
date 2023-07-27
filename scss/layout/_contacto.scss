@@ -7,24 +7,25 @@
 }
 .headercontacto{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-self: center;
-    gap: 7rem;
     margin-top: 1rem;
-    ul{
-        display:flex ;
-        justify-content: center;
-        justify-self: center;
-        gap: 5rem;
-        padding-top: 0.5rem;
-        font-size: 1rem;
-        list-style: none;
+    nav{
+        display: flex;
+        ul{
+            justify-content: center;
+            gap: 5rem;
+            padding-top: 0.5rem;
+            font-size: 1rem;
+            list-style: none;
             a{
                 text-decoration: none;
                 color:black;
                 font-family: 'Montserrat', sans-serif;    
             }
         }    
+    }
     .iconos-contacto{
         display: flex;
         justify-items: end;

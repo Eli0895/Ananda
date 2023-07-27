@@ -28,7 +28,6 @@
             }               
         }  
         div{
-            display: flex;
             justify-content: left;
             padding-left: 2rem;
         }
@@ -55,16 +54,8 @@
         }
 }
 .container-fluid-2{
+    display: flex;
     min-height: 46vh;
-        h1{
-            color: black;
-            font-size: 3rem;
-            font-family: 'Indie Flower';
-            display: flex;
-            justify-content: center;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
-            }
             .row{
             display: flex;
             justify-content: center;
@@ -79,16 +70,15 @@
                         height:20rem ;
                         width: 20rem;
                     }
-                    }
-                
+                    }               
                 }
             }
 .container-fluid-3{
     min-height: 10rem;
     .row{
-        display: flex;
-        justify-content: center;
-        align-self: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
         img{
             border-radius: 40px;
             width: 50rem;
@@ -97,7 +87,7 @@
             &:hover{
                 height:28rem ;
                 width: 55rem;
+                }
             }
         }
     }
-}
