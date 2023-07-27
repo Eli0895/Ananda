@@ -37,7 +37,7 @@ font-family: 'Roboto Slab', serif;*/
 .headerinicio {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2862745098);
 }
@@ -403,7 +403,7 @@ font-family: 'Roboto Slab', serif;*/
 
 .container-fluid-2 {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 .container-fluid-2 .row {
   display: flex;
@@ -426,23 +426,24 @@ font-family: 'Roboto Slab', serif;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 1rem;
 }
 .cont div {
   display: flex;
   justify-content: center;
   align-self: center;
 }
-.cont div img {
+.cont div .img-fluid {
   border-radius: 40px;
-  width: 50rem;
+  width: auto;
   height: 22rem;
   margin-bottom: 3rem;
 }
-.cont div img:hover {
+.cont div .img-fluid:hover {
   height: 28rem;
   width: 55rem;
 }
-.cont .m-0 {
+.cont p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -450,11 +451,12 @@ font-family: 'Roboto Slab', serif;*/
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 34px;
-  width: 50rem;
+  width: auto;
   background-color: rgba(255, 127, 80, 0.26);
   border-radius: 15px;
   text-align: center;
   margin-bottom: 5rem;
+  margin: auto;
 }
 
 @media (max-width: 780px) {
@@ -479,6 +481,7 @@ font-family: 'Roboto Slab', serif;*/
     align-self: center;
     margin-top: 0.5rem;
     gap: 1rem;
+    margin-bottom: 2rem;
   }
   .headerinicio .iconos-superior img {
     width: 1rem;
