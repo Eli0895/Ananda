@@ -1,0 +1,10 @@
+@mixin navbar-col{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-self: flex-start;
+    text-align: center;
+    margin-top: 1rem;
+}
+

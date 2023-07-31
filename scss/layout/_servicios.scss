@@ -2,47 +2,23 @@
 
 .body1{
     background-color: #D7C0AE;
-    .header-servicios{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 1rem;
-            ul{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                list-style: none;
-                gap: 3rem;
-                    a{
-                        text-decoration: none;
-                        color: white;
-                        font-family: 'Montserrat', sans-serif;
-                        &:active{
-                            color: #000;
-                            }
-                    }
-                }
-            }
-            
-    .iconos-superior1{
+}
+.header-servicio{
+    @extend .headerinicio;
+    }
+.iconos-superior{
     display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 1rem;
+    justify-items: end;
+    gap: 1.5rem;
         img{
             width: 1rem;
-            height: 1rem;
+            height: 1rem; 
+            cursor: pointer;                     
+            }  
+            img:hover{
+                transform: scale(1.2);
             }
-        } 
-    .lotus-servicio{
-        display: flex;
-        img{
-            justify-content: right;
-            height: 3rem;
-            width: 3rem;
-                }
-            }
-        }
+        }  
 
 .main-servicios{
     display: flex;
@@ -50,11 +26,15 @@
     align-self: center;
     text-align: center;
     gap: 1rem;
-    margin-top:3rem ;
+    margin-right:3rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
     .card{
         margin: 1rem;
     }
 }
-.fot-servicios{
-    min-height: 5rem;
+footer{
+    img{
+        padding: 1rem;
+    }
 }

@@ -1,34 +1,16 @@
 /*PAGINA NOSOTROS*/
 
 .nosotros{
-    background-color: #d7c0ae5d;
+    background-color: $background-color-body;
     width: 100%;
+    footer{
+        img{
+            padding: 1rem;
+        }
+    }
 }
 .header-nosotros{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #00000049;
-    ul{
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-        font-size: 1.25rem;
-        list-style: none;
-        text-align: center;
-    }
-    li:hover{
-        transform: scale(1.1);
-    }
-        a{
-            text-decoration: none;
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            &:active{
-                color: black;
-            }
-        }
+    @extend .headerinicio;
     }
 
 .iconos-superior{
@@ -51,7 +33,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    margin: 2rem;
+    margin: 4rem;
         }
 .container-fluid-2{
     display: flex;
@@ -63,13 +45,8 @@
                     border-radius: 40px;
                     width: 17rem;
                     height: 19rem;
-                    margin-left: 2rem;
+                    
                     margin-bottom: 3rem;
-                    transition: height width 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
-                    &:hover{
-                        height:20rem ;
-                        width: 20rem;
-                    }
                     }               
                 }
             }
@@ -87,10 +64,6 @@
             width: auto;
             height: 22rem;
             margin-bottom: 3rem;
-            &:hover{
-                height:28rem ;
-                width: 55rem;
-                }
             }
         }
         p{
@@ -102,10 +75,10 @@
             font-size: 1.5rem;
             line-height: 34px;
             width: auto;
-            background-color: rgba(255, 127, 80, 0.26);
+            background-color: #A1CCD1;
             border-radius: 15px;
             text-align: center;
             margin-bottom: 5rem;
             margin: auto;
     }
-    }
+}
