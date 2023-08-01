@@ -1,84 +1,88 @@
 /*PAGINA NOSOTROS*/
 
-.nosotros{
+.nosotros {
     background-color: $background-color-body;
     width: 100%;
-    footer{
-        img{
+    footer {
+        img {
             padding: 1rem;
         }
     }
 }
-.header-nosotros{
-    @extend .headerinicio;
-    }
 
-.iconos-superior{
+.header-nosotros {
+    @extend .headerinicio;
+}
+
+.iconos-superior {
     display: flex;
     justify-items: end;
     gap: 1.5rem;
-        img{
-            width: 1rem;
-            height: 1rem; 
-            cursor: pointer;                     
-            }  
-            img:hover{
-                transform: scale(1.2);
-            }
-        }
+    img {
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+    }
+    img:hover {
+        transform: scale(1.2);
+    }
+}
 
 
-.main-nosotros{
+.main-nosotros {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
     margin: 4rem;
-        }
-.container-fluid-2{
+}
+
+.container-fluid-2 {
     display: flex;
     justify-content: center;
-            .row{
-            display: flex;
-            justify-content: center;
-                img{
-                    border-radius: 40px;
-                    width: 17rem;
-                    height: 19rem;
-                    
-                    margin-bottom: 3rem;
-                    }               
-                }
-            }
-.cont{
+    .row {
+        display: flex;
+        justify-content: center;
+        img {
+            border-radius: 40px;
+            width: 17rem;
+            height: 19rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.cont {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: center;
     margin: 1rem;
-    div{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-        .img-fluid{
+    div {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
+        .img-fluid {
             border-radius: 40px;
             width: auto;
             height: 22rem;
             margin-bottom: 3rem;
-            }
         }
-        p{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            font-style:'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 1.5rem;
-            line-height: 34px;
-            width: auto;
-            background-color: #A1CCD1;
-            border-radius: 15px;
-            text-align: center;
-            margin-bottom: 5rem;
-            margin: auto;
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-style: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 34px;
+        width: auto;
+        background-color: #A1CCD1;
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 5rem;
+        margin: auto;
     }
 }

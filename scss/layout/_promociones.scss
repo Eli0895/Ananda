@@ -1,40 +1,47 @@
 /*PAGINA PROMOCIONES*/
-.body-promo{
+.body-promo {
     background-color: $background-color-body;
     width: 100%;
     height: 100vh;
 }
-.header-promo{
-    @extend .headerinicio;
-    }
-.iconos-superior{
-    display: flex;
-    justify-items: end;
-    gap: 1.5rem;
-        img{
-            width: 1rem;
-            height: 1rem; 
-            cursor: pointer;                     
-            }  
-            img:hover{
-                transform: scale(1.2);
-            }
-        } 
 
-.iconos-superior{
+.header-promo {
+    @extend .headerinicio;
+    nav {
+        padding-right: 2rem
+    }
+}
+
+.iconos-superior {
     display: flex;
     justify-items: end;
     gap: 1.5rem;
-        img{
-            width: 1rem;
-            height: 1rem; 
-            cursor: pointer;                     
-            }  
-            img:hover{
-                transform: scale(1.2);
-            }
-        }             
-.conteiner-fluid3{
+    img {
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+    }
+
+    img:hover {
+        transform: scale(1.2);
+    }
+}
+
+.iconos-superior {
+    display: flex;
+    justify-items: end;
+    gap: 1.5rem;
+    img {
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+    }
+    img:hover {
+        transform: scale(1.2);
+    }
+}
+
+.conteiner-fluid3 {
     margin-top: 2rem;
     color: black;
     font-size: 1rem;
@@ -42,10 +49,10 @@
     font-weight: 400;
     text-align: center;
     padding: 2rem;
-        img{
-            height: 14rem;
-            width: 13rem;
-            border-radius: 10px;
-            margin-top: 2rem;
-        }
+    img {
+        height: 14rem;
+        width: 13rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
 }
